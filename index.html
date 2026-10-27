@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestão 3D — Fluxo de caixa, pedidos e precificação</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖨️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🖨️ Gestão 3D</div>
+    <nav id="nav">
+      <button data-tab="dashboard" class="active">Dashboard</button>
+      <button data-tab="fluxo">Fluxo de caixa</button>
+      <button data-tab="pedidos">Pedidos</button>
+      <button data-tab="clientes">Clientes</button>
+      <button data-tab="insumos">Insumos</button>
+      <button data-tab="preco">Precificação</button>
+      <button data-tab="config">Dados</button>
+    </nav>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <h3 id="modal-title"></h3>
+      <form id="modal-form"></form>
+    </div>
+  </div>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
